@@ -14,5 +14,8 @@ public class Main {
         UserService userService = new UserServiceImpl();
         userService.dropUsersTable();
         userService.createUsersTable();
+
+        userService.saveUser("dfer", "bt", (byte) 19);
+        System.out.println(userService.getAllUsers());
     }
 }
